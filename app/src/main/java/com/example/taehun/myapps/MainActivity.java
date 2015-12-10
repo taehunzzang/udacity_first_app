@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.taehun.myapps.movies.MovieMain;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button button,button2,button3,button4,button5, button6;
@@ -49,9 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
          switch (v.getId()){
             case R.id.button:
-                startActivity(new Intent(this,MovieMain.class));
                 Log.e("","movide!!!!");
-//                startActivity(new Intent(this,SpotifyMain.class));
                 Toast.makeText(MainActivity.this,getString(R.string.media_streamer),Toast.LENGTH_SHORT ).show();
                 break;
             case R.id.button2:
